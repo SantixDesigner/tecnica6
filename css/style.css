@@ -4,9 +4,7 @@
 
 .header {
   display: flex;
-  padding-bottom: 10px;
-  background-color: #ebcfb2;
-  margin-bottom: 20px; }
+  background-color: #275DAD; }
   .header div:first-of-type img {
     width: 50px; }
   .header div:last-of-type {
@@ -17,48 +15,67 @@
       margin-top: 15px; }
       .header div:last-of-type nav ul li a {
         margin: 0 5px;
-        color: black;
+        color: white;
         text-decoration: none; }
   .header .title h1 {
     margin-left: 20px;
-    margin-top: 5px; }
+    margin-top: 5px;
+    color: white; }
 
 @media (max-width: 575.1px) {
-  .header div:last-of-type nav ul {
-    position: fixed;
-    flex-direction: column;
-    left: 0;
+  .header {
+    position: sticky;
     top: 0;
-    margin: 0;
-    background-color: rgba(66, 75, 84, 0.9);
-    height: 100%;
-    transform: translateX(-200px);
-    transition: .5s; }
-    .header div:last-of-type nav ul li {
-      margin: 10px 0; }
-      .header div:last-of-type nav ul li a {
-        color: white; }
-  .header div:last-of-type nav .ul-nav-show {
-    transform: translateX(0px); }
-  .header .bars {
-    position: absolute;
-    top: 15px;
-    right: 3px; }
-  .header .title h1 {
-    display: none; } }
+    background-color: rgba(39, 93, 173, 0.9); }
+    .header div:last-of-type nav ul {
+      position: fixed;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      margin: 0;
+      background-color: rgba(39, 93, 173, 0.9);
+      height: 100%;
+      transform: translateX(-200px);
+      transition: .5s; }
+      .header div:last-of-type nav ul li {
+        margin: 10px 0; }
+        .header div:last-of-type nav ul li a {
+          color: white; }
+    .header div:last-of-type nav .ul-nav-show {
+      transform: translateX(0px); }
+    .header .bars {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white; }
+    .header .title h1 {
+      display: none; } }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #275DAD;
+  padding: 5px 0; }
+  .footer div {
+    text-align: center; }
+    .footer div h2 {
+      font-size: 15px;
+      color: white; }
 
 .valoresEscuela {
   background-repeat: no-repeat;
-  display: flex; }
+  display: flex;
+  background-color: rgba(252, 247, 248, 0.85); }
   .valoresEscuela img {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 100%;
     max-width: 1200px; }
 
 .main-index {
   display: flex;
   text-align: center;
-  background-color: rgba(225, 206, 122, 0.85); }
+  background-color: rgba(252, 247, 248, 0.85); }
   .main-index .content-div {
     margin: 0 auto; }
     .main-index .content-div div {
@@ -75,4 +92,4 @@
             color: black;
             margin: 0 5px; }
       .main-index .content-div div a {
-        color: #424B54; }
+        color: #275DAD; }

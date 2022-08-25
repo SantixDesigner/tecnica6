@@ -1,8 +1,6 @@
 .header {
     display: flex;
-    padding-bottom: 10px;
-    background-color: rgba($color: $color4, $alpha:1.0);
-    margin-bottom: 20px;
+    background-color: $color3;
     div {
         &:first-of-type {
             img {
@@ -19,7 +17,7 @@
                     li {
                         a {
                             margin: 0 5px;
-                            color: black;
+                            color: white;
                             text-decoration: none;
                         }
                     }
@@ -31,12 +29,16 @@
         h1{
             margin-left: 20px;
             margin-top: 5px;
+            color: white;
         }
     }
 }
 
 @media(max-width:575.1px) {
     .header {
+        position: sticky;
+        top: 0;
+        background-color: rgba($color: $color3, $alpha: 0.9);
         div {
             &:last-of-type {
                 nav {
@@ -65,8 +67,9 @@
         }
         .bars{
             position: absolute;
-            top: 15px;
-            right: 3px;
+            top: 10px;
+            right: 10px;
+            color: white;
         }
         .title{
             h1{

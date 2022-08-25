@@ -1,11 +1,14 @@
-$color1: #FFFFFF;
-$color2: #E1CE7A;
-$color3: #424B54;
-$color4: #EBCFB2;
-$color5: #C5BAAF;
+$color1: #5B616A;
+$color2: #CED3DC;
+$color3: #275DAD;
+$color4: #FCF7F8;
+$color5: #ABA9C3;
 *{
     margin: 0;
     padding: 0;
 }
+
 @import "./header.scss";
+@import "./footer.scss";
 @import "./index.scss";
+@import "./electronica.scss";

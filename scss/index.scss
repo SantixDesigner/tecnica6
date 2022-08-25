@@ -1,8 +1,9 @@
 .valoresEscuela{
     background-repeat: no-repeat;
     display: flex;
+    background-color: rgba($color: $color4, $alpha: 0.85);
     img{
-        margin: 0 auto;
+        margin: 20px auto;
         width: 100%;
         max-width: 1200px;
     }
@@ -10,7 +11,7 @@
 .main-index{
     display: flex;
     text-align: center;
-    background-color: rgba($color: $color2, $alpha: 0.85);
+    background-color: rgba($color: $color4, $alpha: 0.85);
     .content-div{
         margin: 0 auto;
         div{
