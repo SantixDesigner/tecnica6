@@ -1,17 +1,29 @@
 main {
     .container {
         background-color: rgba($color: $color4, $alpha: 0.85);
+
         div {
             div {
-                p{
+                p {
                     font-weight: 500;
                 }
+
                 ul {
                     li {
                         list-style: none;
                     }
                 }
+
+                .d-flex {
+                    flex-wrap: wrap;
+                    li {
+                        margin: 0 5px;
+                    }
+                }
             }
+        }
+        .promocion{
+            font-weight: bold;
         }
     }
 }
