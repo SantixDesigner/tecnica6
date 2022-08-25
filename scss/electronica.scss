@@ -1,0 +1,17 @@
+main {
+    .container {
+        background-color: rgba($color: $color4, $alpha: 0.85);
+        div {
+            div {
+                p{
+                    font-weight: 500;
+                }
+                ul {
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}

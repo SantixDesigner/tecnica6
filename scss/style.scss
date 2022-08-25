@@ -3,9 +3,12 @@ $color2: #CED3DC;
 $color3: #275DAD;
 $color4: #FCF7F8;
 $color5: #ABA9C3;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @import "./header.scss";
