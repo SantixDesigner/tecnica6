@@ -1,0 +1,38 @@
+.valoresEscuela{
+    background-repeat: no-repeat;
+    display: flex;
+    img{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+.main-index{
+    display: flex;
+    text-align: center;
+    background-color: rgba($color: $color2, $alpha: 0.85);
+    .content-div{
+        margin: 0 auto;
+        div{
+            display: flex;
+            justify-content: center;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                li{
+                    list-style: none;
+                    a{
+                        color: black;
+                        margin: 0 5px;
+                        
+                    }
+                }
+            }
+            margin: 20px 0;
+            a{
+                color: $color3;
+            }
+        }
+    }
+}

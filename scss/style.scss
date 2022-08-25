@@ -1,0 +1,11 @@
+$color1: #FFFFFF;
+$color2: #E1CE7A;
+$color3: #424B54;
+$color4: #EBCFB2;
+$color5: #C5BAAF;
+*{
+    margin: 0;
+    padding: 0;
+}
+@import "./header.scss";
+@import "./index.scss";

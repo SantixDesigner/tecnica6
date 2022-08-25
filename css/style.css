@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  display: flex;
+  padding-bottom: 10px;
+  background-color: #ebcfb2;
+  margin-bottom: 20px; }
+  .header div:first-of-type img {
+    width: 50px; }
+  .header div:last-of-type {
+    margin-left: auto; }
+    .header div:last-of-type nav ul {
+      display: flex;
+      list-style: none;
+      margin-top: 15px; }
+      .header div:last-of-type nav ul li a {
+        margin: 0 5px;
+        color: black;
+        text-decoration: none; }
+  .header .title h1 {
+    margin-left: 20px;
+    margin-top: 5px; }
+
+@media (max-width: 575.1px) {
+  .header div:last-of-type nav ul {
+    position: fixed;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    margin: 0;
+    background-color: rgba(66, 75, 84, 0.9);
+    height: 100%;
+    transform: translateX(-200px);
+    transition: .5s; }
+    .header div:last-of-type nav ul li {
+      margin: 10px 0; }
+      .header div:last-of-type nav ul li a {
+        color: white; }
+  .header div:last-of-type nav .ul-nav-show {
+    transform: translateX(0px); }
+  .header .bars {
+    position: absolute;
+    top: 15px;
+    right: 3px; }
+  .header .title h1 {
+    display: none; } }
+
+.valoresEscuela {
+  background-repeat: no-repeat;
+  display: flex; }
+  .valoresEscuela img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px; }
+
+.main-index {
+  display: flex;
+  text-align: center;
+  background-color: rgba(225, 206, 122, 0.85); }
+  .main-index .content-div {
+    margin: 0 auto; }
+    .main-index .content-div div {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0; }
+      .main-index .content-div div ul {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center; }
+        .main-index .content-div div ul li {
+          list-style: none; }
+          .main-index .content-div div ul li a {
+            color: black;
+            margin: 0 5px; }
+      .main-index .content-div div a {
+        color: #424B54; }
