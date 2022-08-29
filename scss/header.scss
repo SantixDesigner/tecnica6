@@ -1,32 +1,65 @@
 .header {
     display: flex;
     background-color: $color3;
+
     div {
         &:first-of-type {
             img {
                 width: 50px;
             }
         }
+
         &:last-of-type {
             margin-left: auto;
+            margin-right: 20px;
+
             nav {
                 ul {
                     display: flex;
                     list-style: none;
                     margin-top: 15px;
+
                     li {
                         a {
                             margin: 0 5px;
                             color: white;
                             text-decoration: none;
                         }
+
+                        ul {
+                            position: absolute;
+                            visibility: hidden;
+                            opacity: 0;
+                            background-color: rgba($color: $color3, $alpha: 0.9);
+                            right: 20px;
+                            text-align: center;
+                            width: 95px;
+                            flex-direction: column;
+                            height: 0%;
+                            transition: .2s ease-in-out;
+
+                            li {
+                                position: relative;
+                                right: 30px;
+                            }
+                        }
+
+                        &:hover {
+                            ul {
+                                visibility: visible;
+                                overflow: hidden;
+                                opacity: 1;
+                                height: 50px;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-    .title{
-        h1{
+
+    .title {
+        h1 {
             margin-left: 20px;
             margin-top: 5px;
             color: white;
@@ -39,6 +72,7 @@
         position: sticky;
         top: 0;
         background-color: rgba($color: $color3, $alpha: 0.9);
+
         div {
             &:last-of-type {
                 nav {
@@ -52,27 +86,61 @@
                         height: 100%;
                         transform: translateX(-200px);
                         transition: .5s;
+
                         li {
-                            margin:10px 0;
+                            margin: 10px 0;
+
                             a {
                                 color: white;
                             }
+
+                            ul {
+                                position: absolute;
+                                visibility: hidden;
+                                opacity: 0;
+                                background-color: rgba($color: $color3, $alpha: 0.9);
+                                right: 20px;
+                                text-align: center;
+                                width: 100px;
+                                flex-direction: column;
+                                height: 0px;
+                                transition: .2s ease-in-out;
+                                z-index: 2;
+                                transform: translate(20px, 180px);
+
+                                li {
+                                    position: relative;
+                                }
+                            }
+
+                            &:hover {
+                                ul {
+                                    height: 95px;
+                                    visibility: visible;
+                                    overflow: hidden;
+                                    opacity: 1;
+                                }
+                            }
                         }
                     }
-                    .ul-nav-show{
+
+                    .ul-nav-show {
                         transform: translateX(0px);
                     }
                 }
             }
         }
-        .bars{
+
+        .bars {
             position: absolute;
             top: 10px;
             right: 10px;
             color: white;
+            cursor: crosshair;
         }
-        .title{
-            h1{
+
+        .title {
+            h1 {
                 display: none;
             }
         }
