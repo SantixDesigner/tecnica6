@@ -1,38 +1,58 @@
 .valoresEscuela{
     background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #A7BFE8, #6190E8);
     background-color: rgba($color: $color4, $alpha: 0.85);
     img{
-        margin: 20px auto;
         width: 100%;
         max-width: 1200px;
     }
 }
+body{
+    background-image: linear-gradient(to right, #A7BFE8, #6190E8);
+}
 .main-index{
     display: flex;
+    justify-content: center;
     text-align: center;
-    background-color: rgba($color: $color4, $alpha: 0.85);
     .content-div{
-        margin: 0 auto;
+        background-image: none;
+        background-color: rgba($color: $color4, $alpha: 0.85);
+        width: 100%;
+        max-width: 1220px;
         div{
             display: flex;
             justify-content: center;
             ul{
+                margin-top: 20px;
                 display: flex;
-                flex-wrap: wrap;
-                text-align: center;
+                flex-wrap: wrap;           
                 li{
                     list-style: none;
                     a{
                         color: black;
                         margin: 0 5px;
-                        
                     }
                 }
             }
-            margin: 20px 0;
             a{
                 color: $color3;
+            }
+        }
+    }
+}
+@media(max-width:348px){
+    .main-index{
+        .content-div{
+            div{
+                ul{
+                    flex-direction: column;
+                    margin: 0;
+                    li{
+                        margin: 0 30px 0 0;
+                    }
+                }
             }
         }
     }

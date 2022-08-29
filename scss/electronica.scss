@@ -1,19 +1,38 @@
 main {
     .container {
         background-color: rgba($color: $color4, $alpha: 0.85);
-
         div {
             div {
                 p {
                     font-weight: 500;
                 }
-
                 ul {
                     li {
                         list-style: none;
+                        margin: 10px 0;
+                        ul{
+                            li{
+                                list-style: none;
+                                margin: 10px 0;
+                                ol{
+                                    li{
+                                        list-style:decimal;
+                                    }
+                                    ul{
+                                        li{
+                                            list-style: none
+                                        }
+                                    }
+                                }
+                            }
+                        };
                     }
                 }
-
+                ol{
+                    li{
+                        margin: 10px 0;
+                    }
+                }
                 .d-flex {
                     flex-wrap: wrap;
                     li {
@@ -24,6 +43,11 @@ main {
         }
         .promocion{
             font-weight: bold;
+            border: .1px solid black;
+        }
+        .pdf{
+            display: flex;
+            justify-content: center;
         }
     }
 }
