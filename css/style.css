@@ -16,29 +16,44 @@
       display: flex;
       list-style: none;
       margin-top: 15px; }
-      .header div:last-of-type nav ul li a {
-        margin: 0 5px;
+      .header div:last-of-type nav ul li {
         color: white;
-        text-decoration: none; }
-      .header div:last-of-type nav ul li ul {
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        background-color: rgba(39, 93, 173, 0.9);
-        right: 20px;
-        text-align: center;
-        width: 95px;
-        flex-direction: column;
-        height: 0%;
-        transition: .2s ease-in-out; }
-        .header div:last-of-type nav ul li ul li {
-          position: relative;
-          right: 30px; }
-      .header div:last-of-type nav ul li:hover ul {
-        visibility: visible;
-        overflow: hidden;
-        opacity: 1;
-        height: 50px; }
+        cursor: pointer;
+        transition: .2s; }
+        .header div:last-of-type nav ul li:hover {
+          color: #038e75; }
+        .header div:last-of-type nav ul li a {
+          margin: 0 5px;
+          color: white;
+          text-decoration: none;
+          transition: .3s;
+          background-image: radial-gradient(currentColor, currentColor);
+          padding-bottom: 3px;
+          background-position: 50% 100%;
+          background-size: 0% 0%, 2.5px;
+          background-repeat: no-repeat; }
+          .header div:last-of-type nav ul li a:hover {
+            color: #038e75;
+            background-size: 100% 2px; }
+        .header div:last-of-type nav ul li ul {
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+          background-color: rgba(39, 93, 173, 0.9);
+          right: 20px;
+          text-align: center;
+          width: 95px;
+          flex-direction: column;
+          height: 0%;
+          transition: .2s ease-in-out; }
+          .header div:last-of-type nav ul li ul li {
+            position: relative;
+            right: 30px; }
+        .header div:last-of-type nav ul li .ul-li-nav-ul-show {
+          visibility: visible;
+          overflow: hidden;
+          opacity: 1;
+          height: 50px; }
   .header .title h1 {
     margin-left: 20px;
     margin-top: 5px;
@@ -78,7 +93,7 @@
           transform: translate(20px, 180px); }
           .header div:last-of-type nav ul li ul li {
             position: relative; }
-        .header div:last-of-type nav ul li:hover ul {
+        .header div:last-of-type nav ul li .ul-li-nav-ul-show {
           height: 95px;
           visibility: visible;
           overflow: hidden;

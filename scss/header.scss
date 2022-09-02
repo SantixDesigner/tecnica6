@@ -20,10 +20,29 @@
                     margin-top: 15px;
 
                     li {
+                        color: white;
+                        cursor: pointer;
+                        transition: .2s;
+
+                        &:hover {
+                            color: rgb(3, 142, 117);
+                        }
+
                         a {
                             margin: 0 5px;
                             color: white;
                             text-decoration: none;
+                            transition: .3s;
+                            background-image: radial-gradient(currentColor, currentColor);
+                            padding-bottom: 3px;
+                            background-position: 50% 100%;
+                            background-size: 0% 0%, 2.5px;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                color: rgb(3, 142, 117);
+                                background-size: 100% 2px;
+                            }
                         }
 
                         ul {
@@ -44,13 +63,11 @@
                             }
                         }
 
-                        &:hover {
-                            ul {
-                                visibility: visible;
-                                overflow: hidden;
-                                opacity: 1;
-                                height: 50px;
-                            }
+                        .ul-li-nav-ul-show {
+                            visibility: visible;
+                            overflow: hidden;
+                            opacity: 1;
+                            height: 50px;
                         }
                     }
                 }
@@ -112,14 +129,11 @@
                                     position: relative;
                                 }
                             }
-
-                            &:hover {
-                                ul {
-                                    height: 95px;
-                                    visibility: visible;
-                                    overflow: hidden;
-                                    opacity: 1;
-                                }
+                            .ul-li-nav-ul-show {
+                                height: 95px;
+                                visibility: visible;
+                                overflow: hidden;
+                                opacity: 1;
                             }
                         }
                     }
