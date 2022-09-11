@@ -13,5 +13,8 @@
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }
