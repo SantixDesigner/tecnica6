@@ -5,3 +5,8 @@ RewriteCond ${REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
 
 ErrorDocument 404 https://escuelatecnica6.netlify.app/index.html
+
+RewriteCond %{REQUEST_FILENAME} .*
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)?problem-domain\. [NC]
+RewriteRule (.*) http://redirected-domain.tld/target.html [R=301,L]
+# RewriteRule (.*) - [F,L]
