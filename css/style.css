@@ -109,6 +109,10 @@
     .header .title h1 {
       display: none; } }
 
+@media (max-width: 620px) {
+  .header .title {
+    display: none; } }
+
 .footer {
   display: flex;
   flex-wrap: wrap;
